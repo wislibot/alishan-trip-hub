@@ -33,68 +33,6 @@ A mobile-first web application designed to help two users (Wisli and Gab) view, 
 4. Open the app in your browser (typically `http://localhost:5173`).
 5. Go to the **Settings** tab and configure your GitHub Sync parameters to start fetching the real data from your repository.
 
-## Deployment to GitHub Pages
-
-This app is configured to be deployed easily to GitHub Pages.
-
-### Setup GitHub Actions for Pages
-1. In your GitHub repository, go to **Settings > Pages**.
-2. Under **Source**, select **GitHub Actions**.
-3. Create a `.github/workflows/deploy.yml` file in your repository:
-   ```yaml
-   name: Deploy to GitHub Pages
-   
-   on:
-     push:
-       branches: ["main"]
-     workflow_dispatch:
-   
-   permissions:
-     contents: read
-     pages: write
-     id-token: write
-   
-   concurrency:
-     group: "pages"
-     cancel-in-progress: true
-   
-   jobs:
-     deploy:
-       environment:
-         name: github-pages
-         url: ${{ steps.deployment.outputs.page_url }}
-       runs-on: ubuntu-latest
-       steps:
-         - name: Checkout
-           uses: actions/checkout@v4
-         - name: Setup Node
-           uses: actions/setup-node@v4
-           with:
-             node-version: 20
-             cache: 'npm'
-         - name: Install dependencies
-           run: npm ci
-         - name: Build
-           run: npm run build
-         - name: Setup Pages
-           uses: actions/configure-pages@v4
-         - name: Upload artifact
-           uses: actions/upload-pages-artifact@v3
-           with:
-             path: './dist'
-         - name: Deploy to GitHub Pages
-           id: deployment
-           uses: actions/deploy-pages@v4
-   ```
-4. Push this file to `main`. The GitHub Action will automatically build and deploy the app.
-5. Access your app at `https://your-username.github.io/alishan-trip-hub/`.
-
-## Configuring GitHub Sync (Fine-Grained PAT)
-
-To allow Wisli and Gab to sync changes directly from the app, each user needs to create their own GitHub Fine-Grained Personal Access Token (PAT). 
-
-**⚠️ SECURITY WARNING:** Never commit your PAT into the codebase. The app securely stores it only in your browser's local storage.
-
 ### How to Create the Token:
 1. Go to your GitHub Settings -> Developer settings -> Personal access tokens -> **Fine-grained tokens**.
 2. Click **Generate new token**.
