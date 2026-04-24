@@ -241,11 +241,6 @@
             "checked": false
           },
           {
-            "id": "pack-snacks",
-            "label": "Snacks / energy bar",
-            "checked": true
-          },
-          {
             "id": "pack-power",
             "label": "Power bank + cable",
             "checked": false
