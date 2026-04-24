@@ -48,7 +48,10 @@
       "wisli": [
         {
           "id": "wisli-0600",
-          "timeRange": { "start": "06:15", "end": "06:30" },
+          "timeRange": {
+            "start": "06:15",
+            "end": "06:30"
+          },
           "title": "Leave NTHU",
           "type": "depart",
           "location": "NTHU",
@@ -56,7 +59,10 @@
         },
         {
           "id": "wisli-0700",
-          "timeRange": { "start": "06:45", "end": "07:05" },
+          "timeRange": {
+            "start": "06:45",
+            "end": "07:05"
+          },
           "title": "Arrive HSR Hsinchu + buffer",
           "type": "buffer",
           "location": "HSR Hsinchu",
@@ -64,7 +70,10 @@
         },
         {
           "id": "wisli-0750",
-          "timeRange": { "start": "07:50", "end": "08:05" },
+          "timeRange": {
+            "start": "07:50",
+            "end": "08:05"
+          },
           "title": "Arrive HSR Chiayi",
           "type": "arrival",
           "location": "HSR Chiayi",
@@ -74,7 +83,10 @@
       "gab": [
         {
           "id": "gab-0600",
-          "timeRange": { "start": "06:00", "end": "06:30" },
+          "timeRange": {
+            "start": "06:00",
+            "end": "06:30"
+          },
           "title": "Leave home / school area",
           "type": "depart",
           "location": "三信家商 area (Kaohsiung)",
@@ -82,7 +94,10 @@
         },
         {
           "id": "gab-mrt",
-          "timeRange": { "start": "06:20", "end": "07:00" },
+          "timeRange": {
+            "start": "06:20",
+            "end": "07:00"
+          },
           "title": "MRT to Zuoying (HSR)",
           "type": "transit",
           "location": "Kaohsiung MRT",
@@ -90,7 +105,10 @@
         },
         {
           "id": "gab-0750",
-          "timeRange": { "start": "07:50", "end": "08:05" },
+          "timeRange": {
+            "start": "07:50",
+            "end": "08:05"
+          },
           "title": "Arrive HSR Chiayi",
           "type": "arrival",
           "location": "HSR Chiayi",
@@ -109,7 +127,10 @@
       },
       {
         "id": "shared-0810",
-        "timeRange": { "start": "08:00", "end": "08:10" },
+        "timeRange": {
+          "start": "08:00",
+          "end": "08:10"
+        },
         "title": "Quick prep",
         "type": "prep",
         "location": "HSR Chiayi",
@@ -117,7 +138,10 @@
       },
       {
         "id": "shared-0820",
-        "timeRange": { "start": "08:10", "end": "08:20" },
+        "timeRange": {
+          "start": "08:10",
+          "end": "08:20"
+        },
         "title": "Transfer: HSR Chiayi → TRA Chiayi (bus/BRT)",
         "type": "transfer",
         "location": "HSR Chiayi Bus/BRT platform",
@@ -140,7 +164,10 @@
       },
       {
         "id": "shared-1120",
-        "timeRange": { "start": "11:20", "end": "12:00" },
+        "timeRange": {
+          "start": "11:20",
+          "end": "12:00"
+        },
         "title": "Entry + lunch",
         "type": "food",
         "location": "Alishan area",
@@ -148,7 +175,10 @@
       },
       {
         "id": "shared-trails",
-        "timeRange": { "start": "12:00", "end": "15:15" },
+        "timeRange": {
+          "start": "12:00",
+          "end": "15:15"
+        },
         "title": "Forest trails (main loop)",
         "type": "activity",
         "location": "Alishan National Forest Recreation Area",
@@ -156,7 +186,10 @@
       },
       {
         "id": "shared-1545",
-        "timeRange": { "start": "15:45", "end": "16:00" },
+        "timeRange": {
+          "start": "15:45",
+          "end": "16:00"
+        },
         "title": "Arrive bus platform area (return)",
         "type": "buffer",
         "location": "Alishan Transfer Station",
@@ -179,7 +212,10 @@
       },
       {
         "id": "shared-1900",
-        "timeRange": { "start": "18:40", "end": "19:20" },
+        "timeRange": {
+          "start": "18:40",
+          "end": "19:20"
+        },
         "title": "Transfer: TRA Chiayi → HSR Chiayi (bus/BRT)",
         "type": "transfer",
         "location": "Chiayi city transfer",
@@ -189,30 +225,94 @@
     "checklists": {
       "shared": {
         "packing": [
-          { "id": "pack-jacket", "label": "Light jacket / thin fleece", "checked": false },
-          { "id": "pack-rain", "label": "Rain jacket or umbrella", "checked": false },
-          { "id": "pack-water", "label": "Water (at least 1 bottle each)", "checked": false },
-          { "id": "pack-snacks", "label": "Snacks / energy bar", "checked": false },
-          { "id": "pack-power", "label": "Power bank + cable", "checked": false },
-          { "id": "pack-sunscreen", "label": "Sunscreen / hat", "checked": false },
-          { "id": "pack-cash", "label": "Cash backup (small bills)", "checked": false },
-          { "id": "pack-card", "label": "EasyCard or iPASS topped up", "checked": false }
+          {
+            "id": "pack-jacket",
+            "label": "Light jacket / thin fleece",
+            "checked": false
+          },
+          {
+            "id": "pack-rain",
+            "label": "Rain jacket or umbrella",
+            "checked": false
+          },
+          {
+            "id": "pack-water",
+            "label": "Water (at least 1 bottle each)",
+            "checked": false
+          },
+          {
+            "id": "pack-snacks",
+            "label": "Snacks / energy bar",
+            "checked": true
+          },
+          {
+            "id": "pack-power",
+            "label": "Power bank + cable",
+            "checked": false
+          },
+          {
+            "id": "pack-sunscreen",
+            "label": "Sunscreen / hat",
+            "checked": false
+          },
+          {
+            "id": "pack-cash",
+            "label": "Cash backup (small bills)",
+            "checked": false
+          },
+          {
+            "id": "pack-card",
+            "label": "EasyCard or iPASS topped up",
+            "checked": false
+          }
         ],
         "dayOf": [
-          { "id": "day-hsr", "label": "HSR reserved tickets ready", "checked": false },
-          { "id": "day-meet", "label": "Meet at 08:00 @ HSR Chiayi convenience store", "checked": false },
-          { "id": "day-transfer", "label": "Transfer to TRA Chiayi for 08:40 bus", "checked": false },
-          { "id": "day-return", "label": "Be at Alishan platform area 15:45–16:00", "checked": false }
+          {
+            "id": "day-hsr",
+            "label": "HSR reserved tickets ready",
+            "checked": false
+          },
+          {
+            "id": "day-meet",
+            "label": "Meet at 08:00 @ HSR Chiayi convenience store",
+            "checked": false
+          },
+          {
+            "id": "day-transfer",
+            "label": "Transfer to TRA Chiayi for 08:40 bus",
+            "checked": false
+          },
+          {
+            "id": "day-return",
+            "label": "Be at Alishan platform area 15:45–16:00",
+            "checked": false
+          }
         ]
       },
       "personal": {
         "wisli": [
-          { "id": "wisli-taxi", "label": "Taxi/Uber to HSR Hsinchu", "checked": false },
-          { "id": "wisli-arrive", "label": "Arrive HSR Chiayi by ~08:00", "checked": false }
+          {
+            "id": "wisli-taxi",
+            "label": "Taxi/Uber to HSR Hsinchu",
+            "checked": false
+          },
+          {
+            "id": "wisli-arrive",
+            "label": "Arrive HSR Chiayi by ~08:00",
+            "checked": false
+          }
         ],
         "gab": [
-          { "id": "gab-mrt", "label": "MRT to HSR Zuoying", "checked": false },
-          { "id": "gab-arrive", "label": "Arrive HSR Chiayi by ~08:00", "checked": false }
+          {
+            "id": "gab-mrt",
+            "label": "MRT to HSR Zuoying",
+            "checked": false
+          },
+          {
+            "id": "gab-arrive",
+            "label": "Arrive HSR Chiayi by ~08:00",
+            "checked": false
+          }
         ]
       }
     },
