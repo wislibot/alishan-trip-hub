@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "1.0",
+  "trip": {
+    "id": "alishan-day-trip-2026-05-01",
+    "title": "Alishan Day Trip — May 1",
+    "date": "2026-05-01",
+    "timezone": "Asia/Taipei",
+    "theme": "Forest trails + (optional) classic park trains",
+    "highLevelPlan": {
+      "meetup": {
+        "time": "08:00",
+        "place": "HSR Chiayi (嘉義高鐵站)",
+        "meetPoint": "7‑Eleven/FamilyMart near Bus/BRT/City Bus signs (close to HSR exit/gates area)",
+        "lateRule": "If one person is late, wait here until 08:10. Fallback: Passenger Service / Information Counter."
+      },
+      "shuttleUp": {
+        "route": "Taiwan Tourist Shuttle Route B (7322)",
+        "from": "TRA Chiayi Station (嘉義火車站)",
+        "to": "Alishan Transfer Station (阿里山轉運站)",
+        "depart": "08:40",
+        "arrive": "11:10"
+      },
+      "return": {
+        "primaryDepart": "16:10",
+        "backupDepart": "17:10",
+        "platformArrivalWindow": {
+          "start": "15:45",
+          "end": "16:00"
+        },
+        "lineStrategy": "Arrive platform 15:45–16:00. If the line is long, queue immediately. If 16:10 is full, take 17:10 (last).",
+        "arriveTRAChiayiIfPrimary": "18:40",
+        "arriveTRAChiayiIfBackup": "19:40"
+      }
+    },
+    "people": [
+      {
+        "id": "wisli",
+        "displayName": "Wisli",
+        "homeBase": "NTHU (Hsinchu)"
+      },
+      {
+        "id": "gab",
+        "displayName": "Gab",
+        "homeBase": "Near 三信家商 (Kaohsiung)"
+      }
+    ],
+    "personalTimelines": {
+      "wisli": [
+        {
+          "id": "wisli-0600",
+          "timeRange": { "start": "06:15", "end": "06:30" },
+          "title": "Leave NTHU",
+          "type": "depart",
+          "location": "NTHU",
+          "notes": "Take taxi/Uber to HSR Hsinchu (新竹高鐵／六家)."
+        },
+        {
+          "id": "wisli-0700",
+          "timeRange": { "start": "06:45", "end": "07:05" },
+          "title": "Arrive HSR Hsinchu + buffer",
+          "type": "buffer",
+          "location": "HSR Hsinchu",
+          "notes": "Buy breakfast/coffee, enter gates. Holiday buffer."
+        },
+        {
+          "id": "wisli-0750",
+          "timeRange": { "start": "07:50", "end": "08:05" },
+          "title": "Arrive HSR Chiayi",
+          "type": "arrival",
+          "location": "HSR Chiayi",
+          "notes": "Go to meetup convenience store near Bus/BRT signs."
+        }
+      ],
+      "gab": [
+        {
+          "id": "gab-0600",
+          "timeRange": { "start": "06:00", "end": "06:30" },
+          "title": "Leave home / school area",
+          "type": "depart",
+          "location": "三信家商 area (Kaohsiung)",
+          "notes": "Head to MRT and then to HSR Zuoying."
+        },
+        {
+          "id": "gab-mrt",
+          "timeRange": { "start": "06:20", "end": "07:00" },
+          "title": "MRT to Zuoying (HSR)",
+          "type": "transit",
+          "location": "Kaohsiung MRT",
+          "notes": "Wukuaicuo (五塊厝) → Formosa Blvd (美麗島) transfer → Zuoying (左營/R16)."
+        },
+        {
+          "id": "gab-0750",
+          "timeRange": { "start": "07:50", "end": "08:05" },
+          "title": "Arrive HSR Chiayi",
+          "type": "arrival",
+          "location": "HSR Chiayi",
+          "notes": "Go to meetup convenience store near Bus/BRT signs."
+        }
+      ]
+    },
+    "sharedTimeline": [
+      {
+        "id": "shared-0800",
+        "time": "08:00",
+        "title": "Meet up",
+        "type": "meet",
+        "location": "HSR Chiayi",
+        "notes": "Meet at 7‑Eleven/FamilyMart near Bus/BRT signs."
+      },
+      {
+        "id": "shared-0810",
+        "timeRange": { "start": "08:00", "end": "08:10" },
+        "title": "Quick prep",
+        "type": "prep",
+        "location": "HSR Chiayi",
+        "notes": "Buy water + snack. Confirm bus plan."
+      },
+      {
+        "id": "shared-0820",
+        "timeRange": { "start": "08:10", "end": "08:20" },
+        "title": "Transfer: HSR Chiayi → TRA Chiayi (bus/BRT)",
+        "type": "transfer",
+        "location": "HSR Chiayi Bus/BRT platform",
+        "notes": "Follow signs for Bus/BRT/City Bus. Goal: arrive TRA Chiayi by ~08:30."
+      },
+      {
+        "id": "shared-0840",
+        "time": "08:40",
+        "title": "Bus up the mountain",
+        "type": "transport",
+        "location": "TRA Chiayi → Alishan (7322 Route B)",
+        "notes": "Depart 08:40, arrive 11:10."
+      },
+      {
+        "id": "shared-1110",
+        "time": "11:10",
+        "title": "Arrive Alishan",
+        "type": "arrival",
+        "location": "Alishan Transfer Station"
+      },
+      {
+        "id": "shared-1120",
+        "timeRange": { "start": "11:20", "end": "12:00" },
+        "title": "Entry + lunch",
+        "type": "food",
+        "location": "Alishan area",
+        "notes": "Eat early to protect trail time."
+      },
+      {
+        "id": "shared-trails",
+        "timeRange": { "start": "12:00", "end": "15:15" },
+        "title": "Forest trails (main loop)",
+        "type": "activity",
+        "location": "Alishan National Forest Recreation Area",
+        "notes": "Prioritize Giant Trees Trail + Sister Ponds + forest paths. Optional short ride on Zhaoping/Shenmu line if time."
+      },
+      {
+        "id": "shared-1545",
+        "timeRange": { "start": "15:45", "end": "16:00" },
+        "title": "Arrive bus platform area (return)",
+        "type": "buffer",
+        "location": "Alishan Transfer Station",
+        "notes": "Check queue length. If long, queue immediately."
+      },
+      {
+        "id": "shared-1610",
+        "time": "16:10",
+        "title": "Return bus (preferred)",
+        "type": "transport",
+        "location": "Alishan → TRA Chiayi (Route B)",
+        "notes": "If 16:10 is full, take 17:10 last bus."
+      },
+      {
+        "id": "shared-1840",
+        "time": "18:40",
+        "title": "Arrive TRA Chiayi (if 16:10 bus)",
+        "type": "arrival",
+        "location": "TRA Chiayi"
+      },
+      {
+        "id": "shared-1900",
+        "timeRange": { "start": "18:40", "end": "19:20" },
+        "title": "Transfer: TRA Chiayi → HSR Chiayi (bus/BRT)",
+        "type": "transfer",
+        "location": "Chiayi city transfer",
+        "notes": "Then split home by HSR."
+      }
+    ],
+    "checklists": {
+      "shared": {
+        "packing": [
+          { "id": "pack-jacket", "label": "Light jacket / thin fleece", "checked": false },
+          { "id": "pack-rain", "label": "Rain jacket or umbrella", "checked": false },
+          { "id": "pack-water", "label": "Water (at least 1 bottle each)", "checked": false },
+          { "id": "pack-snacks", "label": "Snacks / energy bar", "checked": false },
+          { "id": "pack-power", "label": "Power bank + cable", "checked": false },
+          { "id": "pack-sunscreen", "label": "Sunscreen / hat", "checked": false },
+          { "id": "pack-cash", "label": "Cash backup (small bills)", "checked": false },
+          { "id": "pack-card", "label": "EasyCard or iPASS topped up", "checked": false }
+        ],
+        "dayOf": [
+          { "id": "day-hsr", "label": "HSR reserved tickets ready", "checked": false },
+          { "id": "day-meet", "label": "Meet at 08:00 @ HSR Chiayi convenience store", "checked": false },
+          { "id": "day-transfer", "label": "Transfer to TRA Chiayi for 08:40 bus", "checked": false },
+          { "id": "day-return", "label": "Be at Alishan platform area 15:45–16:00", "checked": false }
+        ]
+      },
+      "personal": {
+        "wisli": [
+          { "id": "wisli-taxi", "label": "Taxi/Uber to HSR Hsinchu", "checked": false },
+          { "id": "wisli-arrive", "label": "Arrive HSR Chiayi by ~08:00", "checked": false }
+        ],
+        "gab": [
+          { "id": "gab-mrt", "label": "MRT to HSR Zuoying", "checked": false },
+          { "id": "gab-arrive", "label": "Arrive HSR Chiayi by ~08:00", "checked": false }
+        ]
+      }
+    },
+    "links": [
+      {
+        "id": "route-b-pdf",
+        "title": "Alishan Route B (7322) timetable PDF",
+        "url": "https://www.ali-nsa.net/Content/files/taiwan-tourist-shuttle-alishan-route-B.pdf",
+        "type": "timetable"
+      },
+      {
+        "id": "taiwantrip-route",
+        "title": "Taiwan Tourist Shuttle route page (payment methods, seat reservation notes)",
+        "url": "https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0008",
+        "type": "info"
+      },
+      {
+        "id": "afrch-branch-lines",
+        "title": "Alishan Forest Railway branch lines (Zhushan/Shenmu/Zhaoping timetables)",
+        "url": "https://afrch.forest.gov.tw/0000300",
+        "type": "timetable"
+      }
+    ],
+    "notes": [
+      "May 1 is a holiday: expect crowds and lines.",
+      "Return buses can fill up; keep 17:10 as safety net.",
+      "Zhushan sunrise train is not realistic for this day-trip timing (arriving ~11:10)."
+    ]
+  }
+}
